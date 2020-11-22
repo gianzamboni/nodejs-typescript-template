@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Basic configuration for nodejs webpack typescript development",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --mode=production --config webpack/config.prod.js",
-    "dev": "cross-env NODE_ENV=development webpack --mode=development  --config webpack/config.dev.js --watch",
+    "build": "cross-env-file .env.prod.json webpack --mode=production --config webpack/config.prod.js",
+    "dev": "cross-env-file .env.dev.json webpack --mode=development  --config webpack/config.dev.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node build/main.js"
   },
@@ -20,7 +20,6 @@
   "homepage": "https://github.com/gianzamboni/basic-template#readme",
   "devDependencies": {
     "@types/node": "^14.14.7",
-    "cross-env": "^7.0.2",
     "cross-env-file": "^1.0.0",
     "nodemon-webpack-plugin": "^4.3.2",
     "ts-loader": "^8.0.11",
