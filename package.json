@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Basic configuration for nodejs webpack typescript development",
   "scripts": {
-    "build": "cross-env-file .env.prod.json webpack --mode=production --config webpack/config.prod.js",
-    "dev": "cross-env-file .env.dev.json webpack --mode=development  --config webpack/config.dev.js --watch",
+    "build": "cross-env-file -p .env.prod.json webpack --mode=production --config webpack/config.prod.js",
+    "dev": "cross-env-file -p .env.dev.json webpack --mode=development  --config webpack/config.dev.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node build/main.js"
   },
