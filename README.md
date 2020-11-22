@@ -19,7 +19,7 @@ Basic configuration for nodejs + typescript development. It includes:
         * write typescript code and compile it to executable js code (`typescript`, `ts-loader`, `@types/node`),
         * bundle all your compiled clases and functions into a single minified file in order to simplify the delivery to the production environment (`webpack`, `webpack-cli`),
         * tell the bundler that you are developing an nodejs app and hence it should let you use native functions (such as filesystem operations and child processes) (`webpack-node-externals`),
-        * scpecify environment variables in order to change your app behaviour depending where you are running it (i.e, load a logger/debugger package on your local machine that shouldn't be on the final app) (`cross-env`, `cross-env-file`). Depending where you are going to deploy your app, you may have to tweak this commads.
+        * scpecify environment variables in order to change your app behaviour depending where you are running it (i.e, load a logger/debugger package on your local machine that shouldn't be on the final app) (`cross-env-file`). Depending where you are going to deploy your app, you may have to tweak this commads.
         * hotreload the application on an delelopment environment (`nodemon-webpack-plugin`). This means that the app will recompile and restart each time you modify a file.
     
     * It also declares some scripts in order to make the application running and compiling a bit easier:
