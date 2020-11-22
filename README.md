@@ -49,7 +49,7 @@ After that you should take care to install each package you wnat to add with its
 Remember that typescript typing is only necessary when you are coding. Once compiled to common js all typing notation is deleted, so you don't need to add typing packages to production environment.
 
 ### Environment variables
-You should create your own `.env.dev.json` and `.env.prod.json` with an empty json object before running your application for the first time. You will put here variables which contain sensitive information that you need to use on your code but that you do not want to share to the world. **YOU MUST NOT PUSH THIS FILES TO ANY REPOSITORY**. 
+You should create your own `.env.dev.json` and `.env.prod.json` with an empty json object before running your application for the first time. You will put here variables which contain sensitive information that you need to use on your code but that you do not want to share with the world. **(YOU MUST NOT PUSH THIS FILES TO ANY REPOSITORY)**
 
 All variables declared here will be avalaible through the `process.env` variable in your app. i.e if you declared the variable `SECRET_API_KEY` in `.env.json`, then you will be able to use it in this way:
 
